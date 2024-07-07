@@ -1,7 +1,11 @@
-import HomeScreen from "./presentation/screens/home/HomeScreen"
+
+import { NavigationContainer } from "@react-navigation/native"
+import { NavigatorStack } from "./presentation/navigations/NavigatorStack"
 
 export const App = () => {
   return (
-    <HomeScreen />
+    <NavigationContainer>
+      <NavigatorStack />
+    </NavigationContainer>
   )
 }
